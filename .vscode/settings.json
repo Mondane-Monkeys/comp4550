@@ -1,5 +1,5 @@
 {
-   "C_Cpp.default.compilerPath": "/opt/arm-none-eabi-gcc",
+   "C_Cpp.default.compilerPath": "arm-none-eabi-gdb",
    "makefile.configurations": [
      {
        "name": "all"

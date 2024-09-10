@@ -2,7 +2,7 @@
 # WARNING: assumes that each question solution is a SINGLE source file with the same name as the target .elf
 
 # default target when "make" is run w/o arguments, update to include all targets for a given assignment
-all: a1.elf
+all: debugging.elf
 
 # device specific naming and paths
 DEVICE=same51j20a
@@ -33,7 +33,7 @@ release: clean all
 .PRECIOUS: %.o
 
 # build all sources needed by the project
-%.o: $(HDRS)
+%.o: %.c $(HDRS)
 	$(CC) $(CFLAGS) $(INCLUDE_PATHS) $*.c -o $*.o
 
 # build the executable file
