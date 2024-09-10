@@ -1,0 +1,22 @@
+{
+   "C_Cpp.default.compilerPath": "/opt/arm-none-eabi-gcc",
+   "makefile.configurations": [
+     {
+       "name": "all"
+     },
+     {
+       "name": "install",
+       "makeArgs": ["test-install"]
+     },
+     {
+       "name": "clean",
+       "makeArgs": ["clean"]
+     }
+   ],
+   "files.associations": {
+      "dcc_stdio.h": "c",
+      "assert.h": "c",
+      "sam.h": "c",
+      "same51n20a.h": "c"
+   }
+ }
